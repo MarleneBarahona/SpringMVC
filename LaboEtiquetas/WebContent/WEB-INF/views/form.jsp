@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,11 +17,11 @@
 			<th>Experiencia</th>
 		</tr>
 		<tr>
-			<th>${student.name}</th>
-			<th>${student.lastName}</th>
-			<th>${student.bDate}</th>
-			<th>${student.career}</th>
-			<th>${student.experience}</th>
+			<th> <c:out value="${student.name}"></c:out></th>
+			<th> <c:out value="${student.lastName}"></c:out></th>
+			<th> <c:out value="${student.bDate}"></c:out></th>
+			<th> <c:out value="${student.career}"></c:out></th>
+			<th> <c:out value="${student.experience}"></c:out></th>
 		</tr>
 	</table>
 </body>
