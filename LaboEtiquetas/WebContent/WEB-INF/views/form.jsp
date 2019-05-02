@@ -19,7 +19,6 @@
 			<th>Carrera</th>
 			<th>Experiencia</th>
 			<th>Fecha de registro</th>
-			<th>algo</th>
 		</tr>
 		<tr>
 			<th> <c:out value="${student.name}"></c:out></th>
