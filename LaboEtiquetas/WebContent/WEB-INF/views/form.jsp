@@ -2,11 +2,13 @@
     pageEncoding="UTF-8"%>
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
   <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+  <%@ taglib prefix = "fn"
+  uri = "http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Confirmado</title>
+<title><c:set value="Formulario completado" var="pageTitle"/> <c:out value="${pageTitle}"></c:out></title>
 </head>
 <body>
 	<table>
@@ -17,6 +19,7 @@
 			<th>Carrera</th>
 			<th>Experiencia</th>
 			<th>Fecha de registro</th>
+			<th>algo</th>
 		</tr>
 		<tr>
 			<th> <c:out value="${student.name}"></c:out></th>
@@ -27,6 +30,7 @@
 			<c:set var="now" value="<%= new java.util.Date()%>"/>
 			<fmt:formatDate type="time" value="${now}"/>
 			<th> <c:out value="${now}"></c:out></th>
+			
 		</tr>
 	</table>
 </body>
